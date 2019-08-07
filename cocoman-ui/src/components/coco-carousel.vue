@@ -5,7 +5,7 @@
             <!-- 底部操作button -->
             <div class="carousel-btns">
                 <div v-for="(item,index) in list" :key="index" :class="index==currentIndex?'index-active':''" @click="changeIndex(index)">
-          
+
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@ export default {
 <style>
 .container{
     width: 500px;
-    height: 500px;
+    height: 200px;
     margin: auto;
 }
 .coco-carousel{

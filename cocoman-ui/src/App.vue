@@ -1,5 +1,5 @@
 <template>
-  <div id="app">  
+  <div id="app">
     <h3>button</h3>
     <div style="display:flex;justify-content:center;">
       <coco-button type='primary'>coco的button</coco-button>
@@ -23,6 +23,10 @@
         </coco-carousel-item>
       </coco-carousel>
     </div>
+    <h3>日期选择器</h3>
+    <div>
+      <coco-datetimepicker></coco-datetimepicker>
+    </div>
   </div>
 </template>
 
@@ -30,10 +34,11 @@
 import cocoButton from './components/coco-button'
 import cocoCarouselItem from './components/coco-carousel-item'
 import cocoCarousel from './components/coco-carousel'
+import cocoDatetimepicker from './components/coco-datetimepicker'
 export default {
   name: 'App',
   components: {
-    cocoButton,cocoCarouselItem,cocoCarousel
+    cocoButton,cocoCarouselItem,cocoCarousel,cocoDatetimepicker
   }
 }
 </script>
@@ -46,7 +51,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-} 
+}
 .box{
   width: 500px;
   height: 200px;
